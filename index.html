@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <title>Your Name</title>
+    <title>Brian Tsoi</title>
 </head>
 <body>
     <div class="grid-2">
@@ -15,19 +15,21 @@
             <h2>Brian Tsoi</h2>
             <p>Toronto, Canada</p>
             <p>brian.s.tsoi@gmail.com</p>
-            <a href="#"><i class="fab fa-linkedin"></i></a>
-            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com/in/brian-tsoi-4835ab262"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/BrianShTsoi"><i class="fab fa-github"></i></a>
         </div>
         <div class="section-2">
             <h2>About</h2>
             <p>Hi, I'm Brian Tsoi.</p>
             <p> 
                 I am a computer engineering student at the University of Toronto. 
-                I am also pursuing a minor in AI and a certificate in Engineering Business.  
+                I am also pursuing a minor in AI and a certificate in Engineering Business. 
+                Additionally, I'm currently taking the online course Full Stack Open to learn web development.
+                You can find my resume <a href="#" style="text-decoration: underline;">here</a>.
             </p>
             <p>
                 I have a passion for learning and I enjoy solving real-world problems by writing elegant code and building powerful software.
-                I am interested in embedded systems, operating systems, cloud computing, web dev and much more. 
+                I am interested in embedded systems, operating systems, cloud computing, web development and much more. 
             </p>
             <p>
                 I use VSCode (with Vim keybindings! I am obsessed with them!) and my favourite language is C.
@@ -39,32 +41,95 @@
             </p>
 
             <h2>Experience</h2>
-            <h3>Firmware Developer @ University of Toronto Aerospace Team Space Systems</h3>
-            <p>I did a lot of firmware</p>
+            <h3><a href="https://github.com/BrianShTsoi/CCSDS-Compression-Python">Firmware Developer @ University of Toronto Aerospace Team Space Systems</a></h3>
+            <p>
+                UTAT Space Systems is a student team that builds and launches CubeSats for scientific missions.
+                As a member of the firmware team, I contributed to the FINCH mission, 
+                designed to conduct a technological demonstration of crop residue mapping from the Low-Earth Orbit that set to be launched in 2025.
+            </p>
+            <p>
+                I developed an adaptive Python compression algorithm based on Golomb-Rice coding, 
+                in accordance with the Consultative Committee for Space Data Systems standards.
+                The algorithm achieved a compression ratio of 1.5:1 and is currently being translated to C 
+                such that it can be run on the STM32 microcontrollers on the CubeSat.
+            </p>
+            <p>
+                We are also using the STM32 Hardware Abstraction Layer and FreeRTOS 
+                to prototype finite state machines and a flight software framework for the CubeSat.
+            </p>
+            <img src="utat.png" alt="UTAT" class="utat_img">
             <br>
 
-            <h3>Software Developer @ Spark Design Club</h3>
-            <p>I did Arduino</p>
+            <h3><a href="https://github.com/alexlehner3868/Spark_2022-23-HackIt">Software Developer @ Spark Design Club</a></h3>
+            <p>
+                The Spark Design Club builds interactive displays that are displayed all around UofT campus. 
+                The project I took part in is called Hack It, a collection of LED minigames inspired by the toy Bop It.
+                Using the Arduino Uno, I worked with 3 other subteam members to build the circuit and logic for the game Copy-It, 
+                where the players use joystick and buttons to recreate patterns on an LED grid.
+            </p>
+            <img src="spark.png" alt="Spark" class="spark_img">
 
             <h2>Projects</h2>
-            <a href="#">Terminal Text Editor</a>
-            <p>Vim like text editor</p>
+            <h3><a href="#">Terminal Text Editor</a></h3>
+            <p>
+                Did I mention that I'm obsessed with Vim? 
+                I implemented a simple terminal text editor with the use of the C standard library, POSIX API and VT100 terminal sequences.
+                I am currently developing modal editing features similar to that of vim
+            </p>
             <br>
 
-            <a href="#">AI Raytracing Image Filter</a>
-            <p>Autoencoder</p>
+            <h3><a href="https://github.com/BrianShTsoi/APS360_raytracing_denoising">AI Raytracing Image Denoising Filter</a></h3>
+            <p>
+                Raytracing is a common technique in 3D graphics rendering.  
+                The quality of ratracing images depends on the number of samples used in the rendering process.
+                A low sampling rate leads to a noisy image, but a high sampling rate is computationally intensive,
+                thus causing a dilemma.
+            </p>
+
+            <p>
+                I worked with 3 other members to collect sufficient data with open source 3D models 
+                and build a Pytorch Autoencoder neural network that aims to denoise poorly rendered 3D images to bypass the 
+                demand for resources in image rendering. We achieved a dnoising filter that removes noises by 83%, 
+                beating conventional noise filters such as non-local means filter by 47%.
+            </p>
             <br>
 
-            <a href="#">Map Application</a>
-            <p>GIS with C++</p>
+            <h3><a href="#">Map Application</a></h3>
+            <p>
+                Working with 2 other team members, we created a data parsing API that reads OpenStreetMap data using C++ and the STL library.
+                We employed different data structures in the STL library to facilitate efficient data retrieval 
+                and crafted a map GUI using the GTK library, enabling users to drag, zoom and search for map locations.
+                In addition, we utilized A* path finding algorithm to provide features that assist users with travelling directions.
+            </p>
             <br>
 
-            <a href="#">Smart Glasses</a>
-            <p>Arduino</p>
+            <h3><a href="https://github.com/celinekwan/makey_makey">Smart Glasses</a></h3>
+            <p>
+                During the MakeUofT Hackathon, two other friends and I 
+                prototyped a smart glasses design that will encourage optimal reading conditions. 
+                Controlled by an Arduino Uno, the circuit incorporates photoresistors, ultrasonic sensors and buzzer
+                to notify wearer when their eyes are too close to the screen/book. 
+                On top of that, we added a web user interface using HTML, CSS and Javascript.
+            </p>
             <br>
 
-            <a href="#">Minigames </a>
-            <p>Pong, Conway's Game of Life, Untangle</p>
+            <h3><a href="https://github.com/BrianShTsoi/ECE243_final_project">Minigame: Untangle </a></h3>
+            <p>
+                Running on a Quartus FPGA, Untangle is built in plain C. 
+                The player has to untangle a mess of lines connected to nodes displayed on a VGA monitor.
+                The program interfaces with a PS/2 mouse, allowing the player to untangle and straighten the lines so that none of them overlap
+            </p>
+            <br>
+
+            <h3><a href="https://github.com/BrianShTsoi/conwayGOL">Minigame: Conway's Game of Life </a></h3>
+            <p>Using vanilla HTML, CSS and Javascript, I created an interactive webpage that demonstrates Conway's Game of Life</p>
+            <br>
+
+            <h3><a href="https://github.com/BrianShTsoi/Pong">Minigame: Pong </a></h3>
+            <p>
+                With the pygame library (and very limited programming skills, I was grade 11 back then self learning python), 
+                I recreated the classic Pong game with a computer component.
+            </p>
 
             <h2>Skills</h2>
             <p>Programming: C, C++, Python, HTML, CSS and Javascript, ARM Assembly</p>
