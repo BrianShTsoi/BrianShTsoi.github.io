@@ -22,7 +22,8 @@ h2,.white{
 
 a{
     color: #dfdfdf;
-    text-decoration: none;
+    /* color: blue; */
+    /* text-decoration: none; */
 }
 /* section 1 */
 .section-1{
@@ -94,17 +95,9 @@ a{
     padding-left: 10px;
 }
 
-.utat_img{
+.project_img {
     display: block;
-    width: 70%;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.spark_img{
-    display: block;
-    width: 80%;
+    /* width: 60%; */
     height: auto;
     margin-left: auto;
     margin-right: auto;

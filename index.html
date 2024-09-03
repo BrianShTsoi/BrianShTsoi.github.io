@@ -19,140 +19,214 @@
             <a href="https://github.com/BrianShTsoi"><i class="fab fa-github"></i></a>
         </div>
         <div class="section-2">
-            <h2>About</h2>
+            <!-- <h2>What is this page?</h2> -->
             <p>Hi, I'm Brian Tsoi. </p>
             <p>
-                I am currently a Backend Software Engineer Intern at Mozilla on the OS Integration Team of Firefox.
+                <!-- This page serves as a detailed showcase --> 
+                This page is a comprehensive directory of descriptions and links to my technical experiences.
+                <br>
+                For a concise summary, please refer to my <a href="resume.pdf" style="text-decoration: underline;">resume</a>.
+            </p>
+
+            <h2>About Me</h2>
+            <p>
+                <!-- I am currently a Backend Software Engineer Intern at Mozilla on the OS Integration Team of Firefox. -->
+                I am working as a Backend Software Engineer Intern at Mozilla Firefox.
             </p>
             <p> 
-                I am a computer engineering student at the University of Toronto.
-                I am also pursuing a minor in AI and a certificate in Engineering Business. 
+                I am also studying Computer Engineering at the University of Toronto (finished 3rd year). 
+                <!-- <br> -->
+                <!-- I am also pursuing a minor in AI and a certificate in Engineering Business. --> 
                 <!-- Additionally, I'm currently taking the online course Full Stack Open to learn web development. -->
-                You can find my resume <a href="resume.pdf" style="text-decoration: underline;">here</a>.
             </p>
             <p>
-                I have a passion for learning and I enjoy solving real-world problems by writing elegant code and building powerful software.
-                I am interested in operating systems, cloud computing, compilers, embedded systems, web development and much more. 
-            </p>
-            <p>
-                I am obsessed with text editors. VS Code, Vim, Emacs....I've tried them all. 
-                My main code editor these days is Helix, and I use Doom Emacs (with Org mode) for my personal notes, 
-                both truly amazing pieces of software I can no longer live without.
-                My favourite language used to be C, but I'm slowly turning into a Rustacean. 
-            </p>
-            <p>
-                Some of my hobbies include reading, watching movies (favourite is Blade Runner 2049), playing board games (favourite is Love Letter), 
-                and having an existential crisis every now and then. 
+                My main interest is in system software, compilers and embedded systems. 
+                <br>
+                I like "interacting with hardware from software's perspective" (borrowed from Linus Torvalds).
+                <!-- I have a passion for learning and I enjoy solving real-world problems by writing elegant code and building powerful software. -->
             </p>
 
             <h2>Experience</h2>
-            <h3><a href="#">Backend Software Engineer Intern @ Mozilla, OS Integration Team of Firefox</a></h3>
+            <h3>Backend Software Engineer Intern @ Mozilla, OS Integration Team of Firefox</h3>
             <p>
-                I started with fixing small bugs in the vast C++/Rust backend of Firefox, and now 
-                I am working to improve the <a href="https://github.com/BrianShTsoi/rust-minidump" style="text-decoration: underline;">rust-minidump</a> library,
-                which is the component responsible for parsing minidump files in the Firefox crash reporting pipeline. 
-                It extracts useful information about memory and assembly instructions from the crashing process, 
-                assisting engineers at Firefox to analyze crash causes.
+                Working on <a href="https://github.com/BrianShTsoi/rust-minidump">Rust-minidump</a>, 
+                the industry-leading open source crash report library used by Mozilla, Microsoft, Sentry and others.
+                <!-- Rust-minidump is used to process 70000-80000 crash reports of Firefox every day, --> 
+                <!-- but Firefox is extremely stable and a significant portion of the received reports are caused by out of memory or bad hardware issues. -->
+                <!-- This is a problem as it makes it harder for Firefox engineers to identify actual bugs that caused unexpected crashes. --> 
+                <!-- <br> -->
             </p>
+            <p>
+                I am adding features to help identify crashes cause by faulty hardware,
+                including inconsistency detection in crash report analysis, and a RAM scanner.
+            </p>
+            <p>
+                I also occasionally contributed other bug fixes to the vast C++/Rust codebase of Firefox.
+            </p>
+            <img src="mozweek.jpg" class="project_img" width="40%">
             <br>
 
-            <h3><a href="https://github.com/BrianShTsoi/CCSDS-Compression-Python">Student Software Developer @ UofT Aerospace Team Space Systems</a></h3>
+            <h3>Student Project Lead & Software Developer @ UofT Spark Design Team</h3>
             <p>
-                UTAT Space Systems is a student team that builds and launches CubeSats for scientific missions.
-                As a member of the firmware team, I contributed to the FINCH mission, 
-                designed to conduct a technological demonstration of crop residue mapping from the Low-Earth Orbit that set to be launched in 2025.
+                Managing the <a href="https://github.com/alayander/DinoJump">DinoJump</a> project with a team of 10
+                alongside with fellow project lead, Alexander Lay.
             </p>
             <p>
-                I developed an adaptive Python compression algorithm based on Golomb-Rice coding, 
-                in accordance with the Consultative Committee for Space Data Systems standards.
-                The algorithm achieved a compression ratio of 1.5:1 and is currently being translated to C 
-                such that it can be run on the STM32 microcontrollers on the CubeSat.
+                The Spark Design Team builds interactive LED displays for the UofT Engineering community.
+                <!-- promoting a sense of community with over 5000 engineering students. -->
             </p>
             <p>
-                We are also using the STM32 Hardware Abstraction Layer and FreeRTOS 
-                to prototype finite state machines and a flight software framework for the CubeSat.
+                This year we are building a holographic display for the dino hopping game and will involve hand gesture controls.
+                It uses Raspberry Pi/Python and Arduino Uno/C++.
             </p>
-            <img src="utat.png" alt="UTAT" class="utat_img">
+            <p>
+                In previous years, I also worked on two other Spark projects, Arena Pinball and Hack-It.
+                Notably, I developed a Python OpenCV based 
+                <a href="https://github.com/BrianShTsoi/arena-pinball-camera">pinball tracking camera system</a>.
+            </p>
+            <!-- <img src="spark timeline.JPG" class="project_img" width="40%"> -->
+            <!-- <br> -->
+            <img src="spark jira.JPG" class="project_img" width="70%">
             <br>
 
-            <h3><a href="https://github.com/alexlehner3868/Spark_2022-23-HackIt">Student Software Developer & Team Lead @ UofT Spark Design Club</a></h3>
+            <h3>Student Software Developer @ UofT Aerospace Team Space Systems</h3>
             <p>
-                The Spark Design Club builds interactive displays that are displayed all around UofT campus. 
-                The project I took part in is called Hack It, a collection of LED minigames inspired by the toy Bop It.
-                Using the Arduino Uno, I worked with 3 other subteam members to build the circuit and logic for the game Copy-It, 
-                where the players use joystick and buttons to recreate patterns on an LED grid.
+                Writing software for the FINCH mission of UTAT Space Systems. 
             </p>
-            <img src="spark.png" alt="Spark" class="spark_img">
+            <p>
+                UTAT Space Systems is a student team that builds CubeSats for scientific missions.
+                <br>
+                FINCH is a satellite for crop residue mapping from the Low-Earth Orbit, set to launch in 2025.
+            </p>
+            <p>
+                I developed an adaptive 
+                <a href="https://github.com/BrianShTsoi/CCSDS-Compression-Python">Python compression algorithm</a> 
+                for hyperspectral images, based on Golomb-Rice coding, according to the Consultative Committee for Space Data Systems standards.
+                <br>
+                The algorithm achieved a 2:1 compression ratio and is currently being translated to C to
+                run on the STM32 microcontroller on the CubeSat.
+            </p>
+            <p>
+                I am also involved in prototyping the multithreaded high-level finite state machine for the satellite software,
+                using STM32 Hardware Abstraction Layer and FreeRTOS.
+            </p>
+            <img src="utat compression.png" class="project_img" width="70%">
 
             <h2>Projects</h2>
-            <h3><a href="#">Terminal Text Editor</a></h3>
+
+            <h3><a href="https://github.com/BrianShTsoi/rlox">Toy Language Interpreter</a></h3>
             <p>
-                Did I mention that I'm obsessed with Vim? 
-                I implemented a simple terminal text editor with the use of the C standard library, POSIX API and VT100 terminal sequences.
-                I am currently developing modal editing features similar to that of vim.
+                A Rust based interpreter of the Lox language (created by Robert Nystrom in <i>Crafting Interpreters</i>)
+                <br>
+                I am looking to expand this work to a bytecode compiler in C++ as well.
             </p>
+            <img src="rlox.jpg" class="project_img" width="70%">
+            <br>
+
+            <h3><a href="https://github.com/BrianShTsoi/vilo">Terminal Text Editor</a></h3>
+            <p>
+                A terminal text editor written with the C standard library, POSIX API and VT100 terminal sequences
+                Did I mention that I'm obsessed with Vim? 
+            </p>
+            <img src="vilo.jpg" class="project_img" width="80%">
             <br>
 
             <h3><a href="https://github.com/BrianShTsoi/APS360_raytracing_denoising">AI Raytracing Image Denoising Filter</a></h3>
             <p>
-                Raytracing is a common technique in 3D graphics rendering.  
-                The quality of ratracing images depends on the number of samples used in the rendering process.
-                A low sampling rate leads to a noisy image, but a high sampling rate is computationally intensive,
-                thus causing a dilemma.
+                A Pytorch based Autoencoder neural network that denoises poorly rendered 3D images by 83%
+                <!-- Raytracing is a common technique in 3D graphics rendering. -->  
+                <!-- The quality of ratracing images depends on the number of samples used in the rendering process. -->
+                <!-- A low sampling rate leads to a noisy image, but a high sampling rate is computationally intensive, -->
+                <!-- thus causing a dilemma. -->
             </p>
-
             <p>
-                I worked with 3 other members to collect sufficient data with open source 3D models 
-                and build a Pytorch Autoencoder neural network that aims to denoise poorly rendered 3D images to bypass the 
-                demand for resources in image rendering. We achieved a dnoising filter that removes noises by 83%, 
-                beating conventional noise filters such as non-local means filter by 47%.
+                I worked in a team of 4. We collected training data from open source 3D models, 
+                and finetuned the model with several iterations.
+                The final model beats conventional denising filter by 47%.
             </p>
+            <img src="denoise.jpg" class="project_img" width="80%">
             <br>
 
-            <h3><a href="#">Map Application</a></h3>
+            <h3>Distributed NoSQL Database</h3>
             <p>
-                Working with 2 other team members, we created a data parsing API that reads OpenStreetMap data using C++ and the STL library.
-                We employed different data structures in the STL library to facilitate efficient data retrieval 
-                and crafted a map GUI using the GTK library, enabling users to drag, zoom and search for map locations.
-                In addition, we utilized A* path finding algorithm to provide features that assist users with travelling directions.
+                A Java key-value database for distributed servers, with consistent hashing and virtual nodes
             </p>
+            <p>
+                I worked in a team of 3. We tested with the Enron dataset (over 2.6 GB), 
+                achieving 99.3% reliability and below 5ms of latency.
+            </p>
+            <p>
+                (Source code not available due to academic restriction)
+            </p>
+            <img src="java nosql.jpg" class="project_img" width="80%">
             <br>
 
-            <h3><a href="https://github.com/celinekwan/makey_makey">Smart Glasses</a></h3>
+            <h3>Google Maps Clone</h3>
             <p>
-                During the MakeUofT Hackathon, two other friends and I 
-                prototyped a smart glasses design that will encourage optimal reading conditions. 
-                Controlled by an Arduino Uno, the circuit incorporates photoresistors, ultrasonic sensors and buzzer
-                to notify wearer when their eyes are too close to the screen/book. 
-                On top of that, we added a web user interface using HTML, CSS and Javascript.
+                A C++ map application using OpenStreetMap data and GTK.
             </p>
+            <p>
+                I worked in a team of 3. The map includes features such as drag and zoom, locations searching and path finding 
+                using the A* algorithm.
+            </p>
+            <p>
+                (Source code not available due to academic restriction)
+            </p>
+            <img src="google maps clone.jpg" class="project_img" width="80%">
             <br>
+
+            <!-- <h3><a href="https://github.com/celinekwan/makey_makey">Smart Glasses</a></h3> -->
+            <!-- <p> -->
+                <!-- During the MakeUofT Hackathon, two other friends and I --> 
+                <!-- prototyped a smart glasses design that will encourage optimal reading conditions. --> 
+                <!-- Controlled by an Arduino Uno, the circuit incorporates photoresistors, ultrasonic sensors and buzzer -->
+                <!-- to notify wearer when their eyes are too close to the screen/book. --> 
+                <!-- On top of that, we added a web user interface using HTML, CSS and Javascript. -->
+            <!-- </p> -->
+            <!-- <br> -->
 
             <h3><a href="https://github.com/BrianShTsoi/ECE243_final_project">Minigame: Untangle </a></h3>
             <p>
-                Running on a Quartus FPGA, Untangle is built in plain C. 
-                The player has to untangle a mess of lines connected to nodes displayed on a VGA monitor.
-                The program interfaces with a PS/2 mouse, allowing the player to untangle and straighten the lines so that none of them overlap.
+                A game built in C to run on Quartus FPGA and interface with a PS/2 mouse and a VGA monitor
+                <br>
+                Player has to untangle a mess of lines connected to nodes such that no lines overlap.
             </p>
+            <img src="untangle.jpg" class="project_img" width="60%">
             <br>
 
             <h3><a href="https://github.com/BrianShTsoi/conwayGOL">Minigame: Conway's Game of Life </a></h3>
             <p>
-                Using vanilla HTML, CSS and Javascript, I created an interactive webpage that demonstrates Conway's Game of Life.
+                Conway's Game of Life in HTML, CSS and vanilla Javascript
             </p>
+            <img src="conwayGOL.jpg" class="project_img" width="80%">
             <br>
 
             <h3><a href="https://github.com/BrianShTsoi/Pong">Minigame: Pong </a></h3>
             <p>
-                With the pygame library (and very limited programming skills, I was grade 11 back then self learning python), 
-                I recreated the classic Pong game with a computer opponent.
+                The classic Pong game with a computer opponent, written with Pygame
             </p>
+            <img src="pypong.jpg" class="project_img" width="60%">
 
             <h2>Skills</h2>
             <p>Programming: C, C++, Python, Rust, Java, HTML, CSS and Javascript, Assembly, Go</p>
             <p>Hardware/Embedded: Arduino, STM32 microcontrollers, UART, I2C, SPI, RTOS, FPGAs (Verilog)</p>
             <p>Tools and Platforms: Linux dev tools (gcc, make, gdb, valgrind), Git, Github</p>
             <p>Languages: Chinese (native in Cantonese, fluent in Mandarin), English (fluent)</p>
+
+            <h2>Random</h2>
+            <p>
+                I am obsessed with text editors. VS Code, Vim, Emacs....I've tried them all. 
+                <br>
+                These days I use Helix for coding, and Doom Emacs for personal notes, both truly amazing editors
+                <br>
+            </p>
+            <p>
+                My favourite language used to be C, but I'm a Rustacean🦀 now.  
+            </p>
+            <p>
+                My hobbies include reading, movies, board games, 
+                and occasionally having an existential crisis. 
+            </p>
         </div>
     </div>
 </body>
