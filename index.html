@@ -48,20 +48,25 @@
 
             <h2>Experience</h2>
             <h3>Backend Software Engineer Intern @ Mozilla, OS Integration Team of Firefox</h3>
+            <p> 
+                Focusing on improvements to the Firefox crash reporting pipeline, 
+                aiming to reduce noise in crash data caused by faulty hardware.
+            </p>
             <p>
-                Working on <a href="https://github.com/BrianShTsoi/rust-minidump">Rust-minidump</a>, 
+                I worked on <a href="https://github.com/BrianShTsoi/rust-minidump">Rust-minidump</a>, 
                 the industry-leading open source crash report library used by Mozilla, Microsoft, Sentry and others.
+                I added an inconsistency detection features to help identify crashes cause by faulty hardware.
                 <!-- Rust-minidump is used to process 70000-80000 crash reports of Firefox every day, --> 
                 <!-- but Firefox is extremely stable and a significant portion of the received reports are caused by out of memory or bad hardware issues. -->
                 <!-- This is a problem as it makes it harder for Firefox engineers to identify actual bugs that caused unexpected crashes. --> 
                 <!-- <br> -->
             </p>
             <p>
-                I am adding features to help identify crashes cause by faulty hardware,
-                including inconsistency detection in crash report analysis, and a RAM scanner.
+                I am the creator and maintainer of the <a href="https://crates.io/crates/memtest">memtest</a> crate,
+                which is an open source Rust library for memory testing.
             </p>
             <p>
-                I also occasionally contributed other bug fixes to the vast C++/Rust codebase of Firefox.
+                I am integrating memory testing into the Firefox crash reporter client.
             </p>
             <!-- <img src="mozweek.jpg" class="project_img" width="40%"> -->
             <br><br>
